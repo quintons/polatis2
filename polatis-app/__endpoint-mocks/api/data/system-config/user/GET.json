@@ -1,0 +1,56 @@
+{
+  "data":[
+    {
+      "name":"admin",
+      "type":"LOCAL_USER",
+      "password":"",
+      "polatis-switch:group":"admin"
+    },
+    {
+      "name":"view",
+      "type":"LOCAL_USER",
+      "password":"",
+      "polatis-switch:group":"view"
+    }
+  ],
+  "status":200,
+  "statusText":"OK",
+  "headers":{
+    "pragma":"no-cache",
+    "date":"Thu, 05 Apr 2018 13:48:19 GMT",
+    "etag":"1520-423256-322193",
+    "server":"",
+    "x-powered-by":"Express",
+    "transfer-encoding":"chunked",
+    "access-control-allow-methods":"GET, POST, PUT, DELETE, PATCH, OPTIONS",
+    "content-type":"application/yang-data+json",
+    "access-control-allow-origin":"http://localhost:8081",
+    "cache-control":"private, no-cache, must-revalidate, proxy-revalidate",
+    "connection":"close",
+    "access-control-allow-headers":"X-Requested-With, content-type, Authorization"
+  },
+  "config":{
+    "transformRequest":{
+
+    },
+    "timeout":0,
+    "xsrfCookieName":"XSRF-TOKEN",
+    "xsrfHeaderName":"X-XSRF-TOKEN",
+    "maxContentLength":-1,
+    "headers":{
+      "Accept":"application/yang-data+json",
+      "Cache-Control":"no-store, no-cache, must-revalidate",
+      "Authorization":"Basic YWRtaW46cm9vdA=="
+    },
+    "method":"get",
+    "auth":{
+      "username":"admin",
+      "password":"root"
+    },
+    "withCredentials":true,
+    "url":"/api/data/system-config/user"
+  },
+  "request":{
+
+  }
+}

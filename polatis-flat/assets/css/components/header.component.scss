@@ -1,0 +1,54 @@
+
+.header {
+  margin-left: 0px;
+  background-color: $header_background;
+  overflow: hidden;
+  height: 85px;
+
+  &--close {
+    display: none;
+  }
+
+  &--open {
+    display: block;
+  }
+
+  &__logo {
+    width: 200px;
+    float: left;
+  }
+  &__detail {
+    width: 260px;
+    float: left;
+    font-size: 11px;
+    color: $header_info_text;
+  }
+  &__menu {
+    float: right;
+    & .menu__cog {
+      margin-left: 0px;
+      color: $header_menu_icon
+    }
+    & .menu__dropdown {
+      margin-left: 0px;
+      color: $header_menu_icon
+    }
+    & .menu__list {
+      margin: 0px;
+    }
+    & .list__item {
+      margin-left: 0px;
+      &--active {
+        margin-left: 0px;
+      }
+    }
+  }
+
+}
+
+.list {
+  &__item {
+    margin-left: 0px;
+    &--active {margin-left: 10px;}
+  }
+}

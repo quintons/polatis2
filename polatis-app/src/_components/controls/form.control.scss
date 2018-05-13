@@ -1,0 +1,29 @@
+
+/**
+form controls sass css styling
+ */
+
+.scrollable-table {
+
+  &__body {
+    overflow-x: auto;
+    display: block;
+    margin: 0;
+
+    &--predefined-search {
+      height: 150px;
+      font-size: em(12);
+    }
+  }
+
+  &__row {
+    cursor: pointer;
+  }
+
+  &__caption {
+    color: #242b36;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: em(12);
+  }
+}

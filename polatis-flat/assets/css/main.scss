@@ -1,0 +1,89 @@
+
+
+@import 'vendor/bootstrap-3.3.7/bootstrap';
+@import 'settings/colors';
+@import 'settings/mixins';
+
+@import 'components/compoenents';
+
+$development: false;
+
+@if($development) {
+
+  /**
+  development code
+   */
+
+  .pol-outer-container {
+    min-width: 600px;
+  }
+
+  /* scafolding */
+  .pol-container {
+    //height: 100%;
+    //display: inline-block;
+    //position: absolute;
+    //width: 100%;
+    //padding: 0 0 25px 0;
+
+    background-color: white;
+  }
+
+  .container__left {
+    //width: 314px;
+    //position: absolute;
+    //display: inline-block;
+    //background-color: yellow;
+    //top: 0px;
+    //bottom: 25px;
+    //overflow-x: auto;
+
+    position: absolute;
+    float: left;
+    width: 314px;
+    background-color: yellow;
+  }
+
+  .container__right {
+    //width: 100%;
+    //display: block;
+    //padding-left: 314px;
+    //background-color: green;
+    //height: 100%;
+    //overflow-x: auto;
+
+    width: 100%;
+    padding-left: 314px;
+    float: left;
+    background-color: green;
+  }
+
+  header {
+    background-color: red;
+    height: 85px;
+  }
+  footer {
+    background-color: red;
+  }
+  section.login {
+    background-color: blue;
+  }
+  .login-detail {
+    background-color: blue;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0px;
+    li {
+
+    }
+  }
+
+} @else {
+
+  /**
+  production code (if needed)
+   */
+
+}

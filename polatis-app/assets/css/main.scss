@@ -1,0 +1,78 @@
+
+// css foundation
+@import 'vendor/bootstrap-3.3.7/bootstrap';
+
+@import 'components/settings/colors';
+@import 'components/settings/mixins';
+@import 'components/settings/variables';
+@import 'components/object/objects';
+
+@import 'bootstrap-overrides';
+
+// fonts
+@import '~assets/css/vendor/fontello/animation';
+@import '~assets/css/vendor/fontello/fontello';
+
+// TODO: move CSS into importing modules to components
+/* containers */
+@import '~containers/core/header';
+@import '~containers/core/footer';
+@import '~containers/login.page';
+@import '~containers/manage-users.page';
+@import '~containers/manage-subswitches.page';
+@import '~containers/change-password.page';
+@import '~containers/manage-ports/left-pane/controls.container';
+
+/* controls */
+@import '~components/manage-switches/content-pane/ports';
+@import '~components/controls/logged-in-user';
+@import '~components/controls/form.control';
+@import '~components/controls/header/product-info';
+@import '~components/controls/spinner';
+@import '~components/controls/info';
+@import '~components/manage-switches/content-pane/connections';
+@import '~components/manage-switches/controls-pane/manage-switches-controls';
+@import '~components/manage-users/manage-users';
+
+/* core */
+@import '~components/core/lib/error-boundary';
+
+
+
+.pol-outer-container {
+  min-width: 600px;
+}
+
+/* scafolding */
+.container__left {
+  position: absolute;
+  float: left;
+  width: 314px;
+}
+
+.container__right {
+ width: 100%;
+  padding-left: 314px;
+  float: left;
+}
+
+.admin-container {
+
+  margin-bottom: 25px;
+  overflow-x: auto;
+  height: 300px; // set dynamically
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  & .login-detail {
+    position: fixed;
+    z-index: 999;
+    top: 85px;
+  }
+
+}
+
+// boostrap firefox specific hack - official from the bootstrap site docs
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}

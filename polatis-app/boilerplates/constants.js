@@ -1,0 +1,10 @@
+
+
+export const constants = {
+    TYPE_REQUEST: 'TYPE_REQUEST',
+    TYPE_SUCCESS: 'TYPE_SUCCESS',
+    TYPE_FAILURE: 'TYPE_FAILURE',
+    TYPE_CACHE: 'TYPE_CACHE',
+
+    TYPE: 'TYPE'
+};

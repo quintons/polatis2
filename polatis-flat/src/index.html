@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <!--[if lt IE 9]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js"></script>
+    <script src="/static/js/html5shiv.js"></script>
+    <![endif]>
+    <script src="/static/js/ui.js"></script>
+</head>
+<body>
+
+<header class="header">
+
+    <div class="header__logo">
+        <img src="/static/images/logo/logo-star.svg" width="50" class="logo__star"/>
+        <img src="/static/images/logo/logo-text.png" width="110" class="logo__text"/>
+
+        <!-- ie fall back -->
+        <picture class="logo_star">
+            <source srcset="/static/images/logo/logo-star.svg" type="image/svg+xml"/>
+            <img srcset="" alt="logo star" />
+        </picture>
+        <picture class="logo_star">
+            <source srcset="/static/images/logo/logo-text.png" type="image/svg+xml"/>
+            <img srcset="" alt="logo text" />
+        </picture>
+
+    </div>
+
+    <div class="header__detail">
+        <ul>
+            <li><span>Name:</span>{productCode.}</li>
+            <li><span>Product Code:</span>{name}</li>
+        </ul>
+    </div>
+
+    <div class="header__menu">
+        <a href="#" class="menu__cog">&nbsp;</a>
+        <!--<HeaderDropDown onLogout={() => { this.handleLogout(); }} onModalShow={() => { this.handleAboutModalShow(); }} isLoggedInAsAdmin={isLoggedInAsAdmin}  />-->
+        <!--<AboutModal serial={serial} firmware={firmware} onModalClose={this.handleAboutModalClose} isAboutModalVisible={this.state.showAboutModal} />-->
+    </div>
+
+</header>
+
+
+<div class="main">
+    <div>
+        <div>
+            <span>Logged in user: John Paul</span>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">Ports</a></li>
+                <li><a href="#">Connections</a></li>
+                <li><a href="#">APS Group</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <!-- left pane -->
+        <div>
+            <a href="#">Search</a>
+            <a href="#">Detail</a>
+            <a href="#" class="arrow">&nbsp;</a>
+        </div>
+        <div>
+            <!-- search/detail view -->
+        </div>
+    </div>
+    <div>
+        <!-- right pane -->
+        <div>
+            <div>
+                <h1>Inputs</h1>
+                <ul class="ports">
+                    <li><span></span></li>
+                </ul>
+            </div>
+            <div>
+                <h1>Outputs</h1>
+                <ul class="ports">
+                    <li><span></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <span>This is a general workflow process message to the user</span>
+</footer>
+
+</body>
+</html>

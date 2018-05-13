@@ -1,0 +1,50 @@
+
+.error {
+  width: 45%;
+  text-align: center;
+  margin: 10% auto;
+
+  &__icon {
+    line-height: 0;
+    font-size: em(150);
+    padding-bottom: 25px;
+    display: block;
+  }
+
+  &--small {
+    width: 400px;
+    text-align: left;
+    margin: 2%;
+    height: 65px;
+
+    .error__icon {
+      font-size: em(50);
+      float: left;
+    }
+    .error__text {
+      float: left;
+      width: 60%;
+      margin-top: 0;
+      font-size: em(12);
+    }
+  }
+
+  &--xsmall {
+    width: auto;
+    text-align: left;
+    margin: 0.5% 2% 0.5% 0;
+    height: 25px;
+
+    .error__icon {
+      font-size: em(16);
+      float: left;
+    }
+    .error__text {
+      float: left;
+      width: 60%;
+      margin: 0;
+      font-size: em(12);
+    }
+  }
+
+}

@@ -1,0 +1,12 @@
+{
+  "presets": ["flow",
+    ["env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }],
+    "jest"
+  ],
+  "plugins": ["transform-async-to-generator", "transform-flow-comments"]
+}

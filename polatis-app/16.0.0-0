@@ -1,0 +1,8 @@
+
+> weak@1.0.1 install C:\Users\sheppqu\WebstormProjects\polatis files\polatis\polatis-app\node_modules\weak
+> node-gyp rebuild
+
+
+C:\Users\sheppqu\WebstormProjects\polatis files\polatis\polatis-app\node_modules\weak>if not defined npm_config_node_gyp (node "C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin\\..\..\node_modules\node-gyp\bin\node-gyp.js" rebuild )  else (node "" rebuild ) 
++ react-dom@15.6.2
+added 117 packages and updated 1 package in 13.548s

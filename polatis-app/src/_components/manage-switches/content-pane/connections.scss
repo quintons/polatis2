@@ -1,0 +1,64 @@
+
+.connections {
+  margin-left: 20px;
+  margin-top: 40px;
+
+  &__pair:hover {
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+
+  &__port {
+    width: 34px;
+    height: 34px;
+    float: left;
+    border: 1px solid #000;
+    text-align: center;
+    &__text {
+      margin-top: 7px;
+      display: block;
+    }
+  }
+
+  &__pair {
+
+    margin: 10px 2px;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    width: 90px;
+    float: left;
+    border: 1px solid #fff;
+
+    &__line {
+      width: 10px;
+      height: 2px;
+      background-color: #0f0f0f;
+      float: left;
+      display: block;
+      margin-top: 16px;
+    }
+  }
+
+  &--table {
+    margin-top: 40px;
+    margin-left: 20px;
+
+    &__heading {
+      padding: 0 10px 10px;
+    }
+    &__pair:hover {
+      border: 1px solid #c1c1c1;
+      cursor: pointer;
+    }
+    &__pair {
+      border-left: 1px solid #fff;
+      border-right: 1px solid #fff;
+      border-top: 1px solid #fff;
+    }
+    &__port {
+      text-align: center;
+      &__text {}
+    }
+  }
+}

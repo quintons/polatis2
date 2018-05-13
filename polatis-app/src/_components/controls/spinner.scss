@@ -1,0 +1,56 @@
+
+.spinner {
+
+  // default classes
+  &__icon {
+
+
+    line-height:1;
+    display: inline-block;
+
+    &--button {
+      @extend .icon-spin5
+    }
+    &--progress {
+      @extend .icon-spin3
+    }
+    &--large {
+      font-size: em(150);
+    }
+    &--medium {
+      font-size: em(80);
+    }
+    &--small {
+      font-size: em(30);
+    }
+    &--xsmall {
+      font-size: em(20);
+    }
+  }
+
+}
+
+.container__right {
+
+  .spinner {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+}
+
+.btn-lg {
+  .button__spinner {
+    right: 2px;
+  }
+}
+
+.button {
+  &__spinner {
+    position: absolute;
+    z-index: 999;
+    top: 10px;
+    right: 10px;
+    color: $login_button_icon-color;
+  }
+}

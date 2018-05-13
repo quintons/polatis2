@@ -1,0 +1,155 @@
+
+.login {
+  margin: 167px auto 0 auto;
+  //border: 1px solid $login_box_border-color;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 369px;
+  text-align: center;
+
+  &__heading {
+    background-color: $login_heading_background-color;
+    color: #fff;
+    padding: 18px 0 20px 0;
+
+    & .heading__main {
+      margin: 0 0 5px 0;
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    & .heading__sub {
+      font-size: 24px;
+      margin: 0;
+    }
+  }
+
+  &__content {
+    border: 1px solid $login_box_border-color;
+    border-top: none;
+    padding-top: 20px;
+  }
+
+  &__controls {
+    position: relative;
+    text-align: left;
+    width: 250px;
+    margin: 24px auto 47px auto;
+    border-bottom: none;
+  }
+
+  &__control {
+    margin-bottom: 18px;
+  }
+
+  &__control:last-child {
+    margin: 0;
+  }
+
+  &__error-message, &__error-message:focus {
+    font-size: 16px;
+    text-align: center;
+    color: $forms_validation_color;
+  }
+
+  &__form-control--error, &__form-control--error:focus {
+    border: 1px solid $forms_validation_color;
+  }
+
+  &__label {
+    color: $login_label_color;
+    font-weight: normal;
+  }
+  &__form-control {
+    color: $login_form-control_color;
+    font-size: 16px;
+    //padding: 12px 14px;
+  }
+
+  &__form-control:-webkit-autofill {
+    background-color: #fff !important;
+  }
+
+  & .form-control { // BS class
+    &__icon-wrapper {
+      position: relative;
+      & span[class^="icon"], div[class^="icon"] {
+        top: 2px;
+        position: absolute;
+        left: 6px;
+        font-size: 20px;
+        color: $login_form-control-icon_color;
+      }
+      & .form-control { // BS class
+        padding-left: 36px;
+      }
+    }
+  }
+
+  &__button, &__button:hover, &__button:visited, &__button:link {
+    color: #fff;
+    background-color: $login_button_background-color !important;
+    border-radius: 0 0 6px 6px;
+    border-color: $login_button_background-color;
+    padding: 16px 0 16px 0;
+  }
+
+  & .button__icon {
+    float: right;
+  }
+
+  & .button {
+
+    &__icon-wrapper {
+      position: relative;
+    }
+    &__icon {
+      position: absolute;
+      z-index: 999;
+      top: 12px;
+      right: 12px;
+      font-size: 22px;
+      color: #fff;
+      cursor: pointer;
+    }
+    &__icon--spinner {
+      transform: translateZ(0);
+      animation: spin 1.4s infinite linear;
+      transform-origin: 50% 54%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    @keyframes &__icon--spinner {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+
+//.animate-spin {
+//  transform: translateZ(0);
+//  animation: spin 1.4s infinite linear;
+//  transform-origin: 50% 52%;
+//  margin-left: 0;
+//  margin-right: 0;
+//}
+//@keyframes spin {
+//  0% {
+//    transform: rotate(0deg);
+//  }
+//  100% {
+//    transform: rotate(360deg);
+//  }
+//}
+
+
+// chrome: hack for yellow autofill color
+//input:-webkit-autofill {
+//  -webkit-box-shadow: 0 0 0px 1000px white inset;
+//}
+

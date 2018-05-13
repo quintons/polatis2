@@ -1,0 +1,14 @@
+[ignore]
+.*/node_modules/enzyme-matchers/*
+
+[include]
+
+[libs]
+<PROJECT_ROOT>/flow-typed
+
+[lints]
+
+[options]
+module.name_mapper='components' -> '<PROJECT_ROOT>/src/_components'
+
+[strict]

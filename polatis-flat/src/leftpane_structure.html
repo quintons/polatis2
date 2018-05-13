@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <!--[if lt IE 9]-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js"></script>
+    <script src="/static/js/html5shiv.js"></script>
+    <![endif]>
+    <script src="/static/js/ui.js"></script>
+</head>
+<body>
+<div class="pol-outer-container">
+    <header class="header">
+        <div class="header__logo">
+
+            <!-- ie fall back -->
+            <picture class="logo_star">
+                <source srcset="/static/images/logo/logo-star.svg" type="image/svg+xml"/>
+                <img srcset="/static/images/logo/logo-star.svg" alt="logo star" width="100" />
+            </picture>
+            <picture class="logo_star" style="width: 200px;">
+                <source srcset="/static/images/logo/logo-text.png" />
+                <img srcset="/static/images/logo/logo-text.png" alt="logo text" />
+            </picture>
+
+        </div>
+        <div class="header__detail">
+            <ul>
+                <li><span>Name:</span>{productCode.}</li>
+                <li><span>Product Code:</span>{name}</li>
+            </ul>
+        </div>
+
+        <div class="header__menu">
+            <a href="#" class="menu__cog">&nbsp;</a>
+            <div class="menu__arrow">&nbsp;</div>
+        </div>
+    </header>
+
+    <div class="pol-container">
+
+        <div class="container__left panel--open">
+            <div class="login-detail js-login-detail">
+                <span>Logged in user: John Paul</span>
+            </div>
+            <div class="search-detail">
+                <div id="tabs">
+                    <ul role="tablist" class="nav nav-tabs">
+                        <li role="presentation" class="">
+                            <a id="tabs-tab-TAB_SEARCH" role="tab" aria-controls="tabs-pane-TAB_SEARCH" aria-selected="false" href="#" tabindex="-1">Search</a>
+                        </li>
+                        <li role="presentation" class="active">
+                            <a id="tabs-tab-TAB_DETAIL" role="tab" aria-controls="tabs-pane-TAB_DETAIL" aria-selected="true" href="#">Detail</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-12">
+                    <div class="js-detail-tabs tab-content show">
+
+                    </div>
+                </div>
+                <span class="search-detail__arrow arrow--open">&nbsp;</span>
+            </div>
+        </div>
+        <div class="container__right panel--open">
+            <div class="submenu js-submenu">
+                <ul class="submenu__items">
+                    <li class="submenu__item"><a class="submenu__link" href="/app/subswitches/ports">Ports</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="/app/subswitches/connections">Connections</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="/app/subswitches/apsgroup">APS Service</a></li>
+                    <li class="submenu__item"><button>Hide</button></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div>
+                    <div class="ports">
+                        <div class="ports__port ports__port--enabled"><span class="ports__port__text">1</span></div>
+                        <div class="ports__port ports__port--enabled"><span class="ports__port__text">2</span></div>
+                        <div class="ports__port ports__port--enabled"><span class="ports__port__text">3</span></div>
+                        <div class="ports__port ports__port--enabled"><span class="ports__port__text">4</span></div>
+                        <div class="ports__port ports__port--enabled"><span class="ports__port__text">5</span></div>
+                        <div class="ports__port ports__port--enabled"><span class="ports__port__text">6</span></div>
+                        <div class="ports__port ports__port--enabled"><span class="ports__port__text">7</span></div>
+                    </div>
+
+                    <div class="ports">
+                        <div class="ports__port ports__port--enabled"><span class="ports__port__text">513</span></div>
+                        <div class="ports__port ports__port--enabled"><span class="ports__port__text">514</span></div>
+                        <div class="ports__port ports__port--enabled"><span class="ports__port__text">515</span></div>
+                        <div class="ports__port ports__port--enabled"><span class="ports__port__text">516</span></div>
+                        <div class="ports__port ports__port--enabled"><span class="ports__port__text">517</span></div>
+                        <div class="ports__port ports__port--enabled"><span class="ports__port__text">518</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span>This is a general workflow process message to the user</span>
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+$foo: red;
+$text_color: #c1c1c1;
+
+.containerClass {
+  &__testClassButton {
+    font-family: "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
+    background-color: $foo;
+  }
+}
+
+.parent {
+  &__child {
+    color: $text_color;
+  }
+}
